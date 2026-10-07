@@ -1,0 +1,8 @@
+LicenseGate synthetic release fixture: DemoBinary 1.0.0
+Artifact identifier: demobinary-1.0.0-fixture
+Distribution: compiled binary with the bundled demo-lib 1.0.0 dependency.
+This file is the complete inventory of documentation shipped with this synthetic artifact:
+- README: "DemoBinary 1.0.0. Run the executable to start."
+- There is no LICENSE, copyright notice, attribution file, or permission notice in the artifact.
+The separately committed dependency license is review evidence and is NOT bundled with the artifact.
+This is an intentionally incomplete technical policy example, not a real published binary audit.
