@@ -348,3 +348,27 @@ def test_objective_validator_rejects_changed_fingerprint(setup):
     docs['dep'] = b'changed'
     mocks(vm, p, docs)
     assert vm.run_validator(index=0) is False
+
+
+def test_equivalent_citation_subsets_do_not_block_consensus(setup):
+    c, vm, p, docs = setup
+    create(c, p)
+    mocks(vm, p, docs)
+    c.review('test')
+    vm.clear_mocks()
+    alternate = result()
+    alternate['dependencies'][0]['citations'] = ['dep']
+    mocks(vm, p, docs, alternate)
+    assert vm.run_validator() is True
+
+
+def test_validator_rejects_fabricated_citation_even_when_outcome_matches(setup):
+    c, vm, p, docs = setup
+    create(c, p)
+    mocks(vm, p, docs)
+    c.review('test')
+    vm.clear_mocks()
+    forged = result()
+    forged['dependencies'][0]['citations'] = ['fake']
+    mocks(vm, p, docs, forged)
+    assert vm.run_validator() is False

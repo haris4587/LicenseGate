@@ -1,0 +1,106 @@
+{
+  "hash": "0x69f009c4d0af625ed298d0b7279c84ecbb935129e7f8ce1b3e511587e26f72f1",
+  "from_address": "0xd215472bEC1a71f4cFe2f6e0F6e3A3C85d58aAd7",
+  "to_address": "0x888e71C12439Caf60b5996Cd1Cfb8A10F1D7e4e8",
+  "status": "UNDETERMINED",
+  "result_name": "MAJORITY_DISAGREE",
+  "created_at": "2026-10-07T14:01:42.238619+00:00",
+  "leader_only": false,
+  "execution_mode": "NORMAL",
+  "rotation_count": 3,
+  "source_commit": "bf9516033695cf2c5002bb0d32b6692754313bf2",
+  "observed_leader_assessments": [
+    {
+      "dependencies": [
+        {
+          "citations": [
+            "dep-license",
+            "distribution",
+            "manifest"
+          ],
+          "id": "demo-lib",
+          "incompatibilities": [],
+          "missing_actions": [
+            "Bundle demo-lib's complete MIT copyright and permission notice within the shipped artifact.",
+            "Add a LICENSE, attribution, or equivalent notice file to the binary artifact containing the dependency notice text."
+          ],
+          "obligations": [
+            "For BINARY distribution including demo-lib, the distributed artifact must include the complete dependency copyright notice and permission notice.",
+            "MIT license text requires the copyright notice and permission notice be included in all copies or substantial portions of the software."
+          ],
+          "outcome": "ACTION_REQUIRED"
+        }
+      ],
+      "outcome": "ACTION_REQUIRED",
+      "reasoning": "Release binding is established by the authenticated manifest provenance and matches the authenticated distribution evidence: project DemoBinary, release 1.0.0, artifact demobinary-1.0.0-fixture, declared MIT, distribution BINARY, with dependency demo-lib 1.0.0 at the listed repository/commit. The policy permits MIT dependencies in binary distribution only if the distributed artifact includes the complete dependency copyright and permission notices. The dependency license evidence shows MIT requires inclusion of the copyright and permission notice in copies or substantial portions. The authenticated distribution inventory explicitly states the shipped artifact contains no LICENSE, copyright notice, attribution file, or permission notice, and that the dependency license review evidence is not bundled. This is a remediable failure to satisfy notice-distribution obligations, not a material incompatibility."
+    },
+    {
+      "dependencies": [
+        {
+          "citations": [
+            "dep-license",
+            "distribution"
+          ],
+          "id": "demo-lib",
+          "incompatibilities": [],
+          "missing_actions": [
+            "Bundle the MIT copyright and permission notice within the distributed binary artifact."
+          ],
+          "obligations": [
+            "Include the above copyright notice and this permission notice in all copies or substantial portions of the Software."
+          ],
+          "outcome": "ACTION_REQUIRED"
+        }
+      ],
+      "outcome": "ACTION_REQUIRED",
+      "reasoning": "The release identity is established by the manifest (DemoBinary 1.0.0). The project distributes as BINARY. The policy requires that binary distributions of MIT dependencies include the complete copyright and permission notices within the distributed artifact. Evidence 'distribution' explicitly states that there is no LICENSE, copyright notice, attribution file, or permission notice bundled with the artifact, and that the dependency license is NOT bundled. This constitutes a missing remediation requirement under the policy."
+    },
+    {
+      "dependencies": [
+        {
+          "citations": [
+            "dep-license",
+            "distribution",
+            "manifest"
+          ],
+          "id": "demo-lib",
+          "incompatibilities": [],
+          "missing_actions": [
+            "Add demo\u2011lib's copyright and permission notice to the shipped artifact."
+          ],
+          "obligations": [
+            "Include the full MIT copyright notice and permission notice of demo\u2011lib in the binary distribution."
+          ],
+          "outcome": "ACTION_REQUIRED"
+        }
+      ],
+      "outcome": "ACTION_REQUIRED",
+      "reasoning": "The release manifest (ID manifest) correctly binds the project, release, artifact, declared MIT license, binary distribution, and the MIT\u2011licensed dependency demo\u2011lib (ID dep-license). The policy permits MIT dependencies in a binary distribution only if the distributed artifact contains the complete copyright and permission notices for each MIT component. The distribution evidence (ID distribution) explicitly states that the shipped binary contains no LICENSE, copyright, attribution, or permission notice. Therefore the required MIT notices for demo\u2011lib are missing. Missing notices are classified as remediable requirements, not a material incompatibility, so the project is not BLOCKED but must remediate the omission. Consequently the overall assessment is ACTION_REQUIRED."
+    },
+    {
+      "dependencies": [
+        {
+          "citations": [
+            "dep-license",
+            "distribution",
+            "manifest"
+          ],
+          "id": "demo-lib",
+          "incompatibilities": [],
+          "missing_actions": [
+            "Add the full MIT license text for demo-lib, including copyright and permission notice, to the shipped binary artifact documentation/package.",
+            "Provide bundled attribution/license documentation within the artifact inventory so shipped notice inclusion is affirmatively evidenced."
+          ],
+          "obligations": [
+            "For BINARY distribution including this MIT-licensed dependency, include the complete dependency copyright notice and permission notice in the distributed artifact.",
+            "Do not rely on separately committed license review evidence as proof the notice was shipped with the artifact."
+          ],
+          "outcome": "ACTION_REQUIRED"
+        }
+      ],
+      "outcome": "ACTION_REQUIRED",
+      "reasoning": "The release binding is established by the authenticated manifest provenance: project DemoBinary, release 1.0.0, artifact demobinary-1.0.0-fixture, distribution BINARY, declared license MIT, and dependency demo-lib 1.0.0 at the listed repository/commit are all specified in the RELEASE_MANIFEST and align with the provided package evidence. For BINARY distribution, the policy permits MIT dependencies only if the shipped artifact includes the complete dependency copyright and permission notices. The dependency license evidence shows MIT notice obligations, but the authenticated distribution inventory states there is no LICENSE, copyright notice, attribution file, or permission notice in the artifact, and separately committed review evidence is not bundled. This is affirmative evidence that required MIT notices for the distributed dependency were not shipped. The policy says missing notices are remediable, not a material incompatibility, so the dependency is ACTION_REQUIRED rather than BLOCKED. Because CLEAR requires affirmative evidence of all obligations and concrete remediation is missing, the overall outcome is ACTION_REQUIRED."
+    }
+  ],
+  "diagnosis": "Exact equality of semantically chosen citation subsets was too restrictive. Final implementation keeps objective fingerprints and dependency/outcome fields exact, validates citation IDs, and compares citation grounding and full assessment semantics against independently fetched documents."
+}
