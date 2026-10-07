@@ -1,0 +1,48 @@
+{
+  "project": "LicenseGate",
+  "network": "stable GenLayer Studionet",
+  "chain_id": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "contract_address": "0x866Be66A0Ff5998c3bc858f3766c2802e2c447a5",
+  "explorer_contract": "https://explorer-studio.genlayer.com/address/0x866Be66A0Ff5998c3bc858f3766c2802e2c447a5",
+  "studio_account": "0xd215472bEC1a71f4cFe2f6e0F6e3A3C85d58aAd7",
+  "source_path": "contracts/licensegate.py",
+  "deployed_source_commit": "4a1a47ea374d1d54608809641f4c8aaf082e524f",
+  "source_sha256": "b7cf829c0ebf7da75d15e8ceb279c9f0683dbbfdb292eb95f9d4bb319225dca7",
+  "source_bytes": 18143,
+  "source_identity_verified_from_deployment_receipt": true,
+  "final_evidence_commit": "The Git commit containing this file; git log -1 --format=%H -- evidence/deployment.json",
+  "release_fixture_commit": "bf9516033695cf2c5002bb0d32b6692754313bf2",
+  "transactions": {
+    "deployment": "0x57b33966ea14305028b9631245fb49146c84aa03a3979cb250fe29c249966a93",
+    "creation": "0x3b81b851d85f178469f59707231bf62c4ef191106755aaa19839c5188a4add27",
+    "adjudication": "0x8ae2df79a3ed562dcdae7ea202d884c2e91378ce46defb1e65011d227a116fbb",
+    "finalization": "0xec1c6e6d2ef5ef0e8902f55e6e4c86df842de67c86d3de7176d172991fbc56ec"
+  },
+  "transaction_status": "FINALIZED",
+  "execution_mode": "NORMAL (Full Consensus)",
+  "leader_only": false,
+  "consensus_result": "MAJORITY_AGREE",
+  "rotations": 0,
+  "review_id": "licensegate-demo-attribution-v1",
+  "application_state": "FINAL",
+  "outcome": "ACTION_REQUIRED",
+  "evidence_quality_score": 100,
+  "decision_hash": "dfcb89e3bffad2d5a8d6c74a0e7a9f1deb8bbbdc0df8c6d74969e9799dcd7c6d",
+  "decision_hash_recomputed": true,
+  "local_tests": {
+    "passed": 76,
+    "failed": 0,
+    "duration_seconds": 3.05
+  },
+  "genvm_lint": "PASS (3 checks)",
+  "sdk_validation": "PASS",
+  "evidence_urls": [
+    "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/PROJECT-LICENSE.txt",
+    "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/release-manifest.json",
+    "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/distribution-missing-attribution.txt",
+    "https://raw.githubusercontent.com/haris4587/LicenseGate/80b4310c14f0b4a1e07f366889260c9eb48ae5d4/fixtures/MIT-LICENSE.txt"
+  ],
+  "consensus_note": "Majority agreement, not unanimity: final round recorded three AGREE, one DISAGREE and one IDLE votes.",
+  "disclaimer": "Technical policy tool only; not legal advice or a legally binding determination."
+}

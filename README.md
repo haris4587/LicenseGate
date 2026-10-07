@@ -70,7 +70,7 @@ Python 3.12+:
 ```sh
 python -m pip install -r requirements-dev.txt
 python -m pytest -q
- genvm-lint check contracts/licensegate.py
+genvm-lint check contracts/licensegate.py
 ```
 
 The suite uses official `genlayer-test` Direct Mode and the actual pinned SDK. SDK v0.2.16 contains the contract's dependency runner. A small test-only adapter executes strict equality's sandbox callback in-process because Direct Mode does not isolate that Sandbox transport. It preserves the SDK Return wrapper and tests independent re-fetch and disagreement; it does not simulate network finality. Live Full Consensus is separate. GenVM lint/SDK validation verifies the canonical source and ABI; CI repeats lint and tests.
@@ -80,3 +80,5 @@ The suite uses official `genlayer-test` Direct Mode and the actual pinned SDK. S
 See [DEPLOYMENT.md](DEPLOYMENT.md), [EVIDENCE.md](EVIDENCE.md), [SECURITY.md](SECURITY.md) and `evidence/`. Always deploy the pushed canonical source bytes and record source SHA-256 and source commit. Studionet is a hosted development network with temporary state; durable repository evidence is necessary. The source dependency is pinned and uses current namespaced APIs verified against the actual SDK.
 
 Recommended submission classification: AI & Agents; Verifiable Inference; Developer Tools (use the closest available portal tags).
+
+Verified live proof: [active contract](https://explorer-studio.genlayer.com/address/0x866Be66A0Ff5998c3bc858f3766c2802e2c447a5), FINAL / ACTION_REQUIRED, four authenticated evidence files, Full Consensus MAJORITY_AGREE. All 76 local tests and GenVM lint/SDK validation passed. Exact receipts, final state, recomputable digest and source-byte comparison are documented in [EVIDENCE.md](EVIDENCE.md). See [SUBMISSION.md](SUBMISSION.md) for submission-ready fields.

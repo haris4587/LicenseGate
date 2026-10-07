@@ -1,0 +1,95 @@
+{
+  "hash": "0xec1c6e6d2ef5ef0e8902f55e6e4c86df842de67c86d3de7176d172991fbc56ec",
+  "from_address": "0xd215472bEC1a71f4cFe2f6e0F6e3A3C85d58aAd7",
+  "to_address": "0x866Be66A0Ff5998c3bc858f3766c2802e2c447a5",
+  "value": 0,
+  "type": 2,
+  "status": "FINALIZED",
+  "result_name": "MAJORITY_AGREE",
+  "created_at": "2026-10-07T14:21:47.248609+00:00",
+  "leader_only": false,
+  "execution_mode": "NORMAL",
+  "num_of_initial_validators": 5,
+  "rotation_count": 0,
+  "last_round": {
+    "round": "0",
+    "leader_index": "0",
+    "votes_committed": "5",
+    "votes_revealed": "5",
+    "appeal_bond": "0",
+    "rotations_left": "3",
+    "result": 6,
+    "round_validators": [
+      "0xE6BD8050758CB15fC88387223E31Ae2708B119dC",
+      "0xec2Fb79cd12255Eb34886CEd7332f27B98DEe658",
+      "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88",
+      "0x3E5ee2507cc167C9925Bf10c67D7986581112024",
+      "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67"
+    ],
+    "validator_votes_hash": [
+      "0x32cb47a9d486f3799746cacf01eb1375f6a08b7bce9301d35598b6ad84cf8319",
+      "0x5ec79e31ebdf23dc65a1723fdb13e2be07702e044399680e89e762d484c58216",
+      "0xa22172686ef89b7e765c44d0ce51238222d3f8e799c910b00adec10e12ae7ffb",
+      "0xcd4fae4e93ce36438c7ace3ef8164087d9a9a1cc0080d492cde61b208e7db3f2",
+      "0x205d02c4433779df5edf4f3cb14945b4b49abb9bbd0398bdc2ebf915a3fadd3e"
+    ],
+    "validator_votes": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "validator_votes_name": [
+      "AGREE",
+      "AGREE",
+      "AGREE",
+      "AGREE",
+      "AGREE"
+    ]
+  },
+  "rounds": [
+    {
+      "status_changes": [
+        "PENDING",
+        "PROPOSING",
+        "COMMITTING",
+        "REVEALING",
+        "ACCEPTED"
+      ],
+      "consensus_round": "Accepted",
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "vote": null
+        },
+        {
+          "execution_result": "SUCCESS",
+          "vote": "agree"
+        }
+      ],
+      "validators": [
+        {
+          "address": "0xec2Fb79cd12255Eb34886CEd7332f27B98DEe658",
+          "vote": "agree",
+          "execution_result": "SUCCESS"
+        },
+        {
+          "address": "0xDB1c35c1f05d885999b8f13e5735307BcC16Be88",
+          "vote": "agree",
+          "execution_result": "SUCCESS"
+        },
+        {
+          "address": "0x3E5ee2507cc167C9925Bf10c67D7986581112024",
+          "vote": "agree",
+          "execution_result": "SUCCESS"
+        },
+        {
+          "address": "0xacc2459F341D7a887bcA8FAA62F1EC9378d4Bc67",
+          "vote": "agree",
+          "execution_result": "SUCCESS"
+        }
+      ]
+    }
+  ]
+}

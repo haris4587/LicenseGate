@@ -6,3 +6,7 @@ genvm-lint schema contracts/licensegate.py --output evidence/contract-schema.jso
 
 GenVM SDK validation passed; canonical LicenseGate ABI has 2 view and 3 nonpayable write methods.
 Local results are recorded by the XML report; Full Consensus live evidence is separate.
+
+Final pre-publication check on 2026-10-07: 76 tests passed in 3.05s.
+GenVM lint: 3 checks passed; SDK validation passed (2 view, 3 write methods).
+The pinned runner validated successfully; linter reported that a newer runner exists.

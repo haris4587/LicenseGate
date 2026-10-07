@@ -1,0 +1,55 @@
+{
+  "hash": "0x52f065344212df04889a89168045f9eeb42d13c2448ff7a67ad2ba88b88f5bdd",
+  "from_address": "0xd215472bEC1a71f4cFe2f6e0F6e3A3C85d58aAd7",
+  "to_address": "0x07D7bAa3C45041311B73B4851C111c1d72Adcacb",
+  "value": 0,
+  "type": 1,
+  "status": "FINALIZED",
+  "result_name": "MAJORITY_AGREE",
+  "created_at": "2026-10-07T14:08:33.089262+00:00",
+  "leader_only": false,
+  "execution_mode": "NORMAL",
+  "num_of_initial_validators": 5,
+  "rotation_count": 0,
+  "last_round": {
+    "round": "0",
+    "leader_index": "0",
+    "votes_committed": "5",
+    "votes_revealed": "5",
+    "appeal_bond": "0",
+    "rotations_left": "3",
+    "result": 6,
+    "round_validators": [
+      "0x4EDbE1FC9EAeC7b0EBA849b0C76AE73Eb0ad5C47",
+      "0x14402D49f317CE1a2F35BAE01b1804A2A9703dCb",
+      "0xBBb165E4c9d73a1493D363280f7067Cd07891dBE",
+      "0xE6BD8050758CB15fC88387223E31Ae2708B119dC",
+      "0x4aba638Cf0Cf5249437AaD968fC69dde46ae6BAC"
+    ],
+    "validator_votes_hash": [
+      "0x3c94cc43682e269042aef7603877c8939e0596c60c0ee7bee4053f383de4895f",
+      "0x2d46587bfdebab94dff763a1110e4d055977ae12d6be840da0e22727a719d065",
+      "0xa50a13a33afc3d846f1decb12d9e40253cd47a65ca615d3237566dc2823f76f9",
+      "0xefa38fc11673b5554951b82d539b252539f98be256a6cfa9ba0a74a8efbf0f32",
+      "0x123bda45f8a90f33739a75b4585a9343dccf825fbf81fde8edcb0306b94ca119"
+    ],
+    "validator_votes": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "validator_votes_name": [
+      "AGREE",
+      "AGREE",
+      "AGREE",
+      "AGREE",
+      "AGREE"
+    ]
+  },
+  "source_sha256": "231c025afd7d007f581e835d1c3edba3ea62b0558cd11513c671aa61290b82ce",
+  "source_matches_canonical": false,
+  "source_commit": "bf9516033695cf2c5002bb0d32b6692754313bf2",
+  "note": "Studio duplicate-filename import retained earlier editor bytes; this deployment is superseded and is not the corrected canonical source."
+}

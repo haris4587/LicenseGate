@@ -19,7 +19,7 @@ response = requests.post('https://studio.genlayer.com/api', json=payload, timeou
 response.raise_for_status()
 receipt = response.json()
 if 'error' in receipt:
-    raise RuntimeError(receipt['error'])
+    raise RuntimeError({'code': receipt['error'].get('code'), 'message': receipt['error'].get('message')})
 value = calldata.decode(bytes.fromhex(receipt['result'].removeprefix('0x')))
 state = json.loads(value)
 Path(args.output).write_text(json.dumps(state, indent=2) + '\n')

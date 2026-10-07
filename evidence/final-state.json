@@ -1,0 +1,139 @@
+{
+  "created_at": 1791382532,
+  "deadline": 1792000000,
+  "decision_hash": "dfcb89e3bffad2d5a8d6c74a0e7a9f1deb8bbbdc0df8c6d74969e9799dcd7c6d",
+  "dependency_manifest_hash": "4ecbb1ee7109539285951aabd9a1c42f9a2d66185792b886dce91174e9781121",
+  "disclaimer": "Technical policy tool only; not legal advice or a legally binding determination.",
+  "evidence_quality_score": 100,
+  "history": [
+    {
+      "state": "EVIDENCE_LOCKED",
+      "timestamp": 1791382532
+    },
+    {
+      "state": "REVIEWED",
+      "timestamp": 1791382790
+    },
+    {
+      "state": "FINAL",
+      "timestamp": 1791382907
+    }
+  ],
+  "id": "licensegate-demo-attribution-v1",
+  "owner": "0xd215472bEC1a71f4cFe2f6e0F6e3A3C85d58aAd7",
+  "package": {
+    "artifact": "demobinary-1.0.0-fixture",
+    "commit": "bf9516033695cf2c5002bb0d32b6692754313bf2",
+    "declared_license": "MIT",
+    "dependencies": [
+      {
+        "commit": "80b4310c14f0b4a1e07f366889260c9eb48ae5d4",
+        "id": "demo-lib",
+        "license_evidence_id": "dep-license",
+        "name": "demo-lib",
+        "repository": "haris4587/LicenseGate",
+        "version": "1.0.0"
+      }
+    ],
+    "distribution": "BINARY",
+    "evidence": [
+      {
+        "bytes": 1090,
+        "id": "project-license",
+        "role": "PROJECT_LICENSE",
+        "sha256": "17b7fd84b25865de28cfb2fa5921de1e88c73702240023948a901178e3c3c7f1",
+        "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/PROJECT-LICENSE.txt"
+      },
+      {
+        "bytes": 453,
+        "id": "manifest",
+        "role": "RELEASE_MANIFEST",
+        "sha256": "854808a99f2e47054cea395217fc509adba0b04e6396bb5e093fff1fbe8d28b7",
+        "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/release-manifest.json"
+      },
+      {
+        "bytes": 621,
+        "id": "distribution",
+        "role": "DISTRIBUTION",
+        "sha256": "1ec43be1f165411b6aba3e101d19731a28efb0c92386bd2ccf285defbbe68ea4",
+        "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/distribution-missing-attribution.txt"
+      },
+      {
+        "bytes": 1090,
+        "id": "dep-license",
+        "role": "DEPENDENCY_LICENSE",
+        "sha256": "17b7fd84b25865de28cfb2fa5921de1e88c73702240023948a901178e3c3c7f1",
+        "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/80b4310c14f0b4a1e07f366889260c9eb48ae5d4/fixtures/MIT-LICENSE.txt"
+      }
+    ],
+    "policy": "Permit MIT dependencies in binary distribution only when the distributed artifact includes the complete dependency copyright and permission notices. Missing notices are remediable requirements, not a material license incompatibility. Assess only the synthetic committed artifact inventory; do not assume separately published license review evidence is shipped with it.",
+    "project": "DemoBinary",
+    "release": "1.0.0",
+    "repository": "haris4587/LicenseGate"
+  },
+  "policy_hash": "1b4742a390e57895057f70d0f58e97fa5aa4369eb26c4143cda19f8a060cb781",
+  "release_identity_hash": "c63d605d33d763a0c5f485f0caf3b6d8f0a02596f6704d566080b8c84c6702d4",
+  "result": {
+    "dependencies": [
+      {
+        "citations": [
+          "dep-license",
+          "distribution",
+          "manifest"
+        ],
+        "id": "demo-lib",
+        "incompatibilities": [],
+        "missing_actions": [
+          "Add the full MIT license text for demo-lib, including copyright and permission notice, to the binary artifact documentation/package.",
+          "Include an attribution/LICENSE/NOTICE file in the shipped artifact so the bundled dependency notices are actually distributed."
+        ],
+        "obligations": [
+          "For BINARY distribution bundling demo-lib, include the complete MIT copyright notice and permission notice in the distributed artifact.",
+          "Assess compliance based on the shipped artifact inventory itself; separate review evidence does not satisfy shipped-notice requirements."
+        ],
+        "outcome": "ACTION_REQUIRED"
+      }
+    ],
+    "outcome": "ACTION_REQUIRED",
+    "reasoning": "Release binding is established by the authenticated manifest provenance and matches the distributed artifact identity: DemoBinary 1.0.0, artifact demobinary-1.0.0-fixture, BINARY distribution, project license MIT, and dependency demo-lib 1.0.0 at the specified repository and commit. The locked policy permits MIT dependencies in binary distribution only if the shipped artifact includes the complete dependency copyright and permission notices. The dependency license evidence shows MIT, which requires inclusion of the copyright and permission notice in copies or substantial portions. Distribution evidence affirmatively states the binary bundles demo-lib and that the artifact contains no LICENSE, copyright notice, attribution file, or permission notice; it also says separate review evidence is not bundled. Therefore obligations for the MIT dependency were not met in the actual distributed artifact. The policy characterizes missing notices as remediable, so this is ACTION_REQUIRED rather than BLOCKED."
+  },
+  "retrieval_manifest": [
+    {
+      "bytes": 1090,
+      "expected_bytes": 1090,
+      "expected_sha256": "17b7fd84b25865de28cfb2fa5921de1e88c73702240023948a901178e3c3c7f1",
+      "id": "project-license",
+      "sha256": "17b7fd84b25865de28cfb2fa5921de1e88c73702240023948a901178e3c3c7f1",
+      "status": "AUTHENTICATED",
+      "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/PROJECT-LICENSE.txt"
+    },
+    {
+      "bytes": 453,
+      "expected_bytes": 453,
+      "expected_sha256": "854808a99f2e47054cea395217fc509adba0b04e6396bb5e093fff1fbe8d28b7",
+      "id": "manifest",
+      "sha256": "854808a99f2e47054cea395217fc509adba0b04e6396bb5e093fff1fbe8d28b7",
+      "status": "AUTHENTICATED",
+      "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/release-manifest.json"
+    },
+    {
+      "bytes": 621,
+      "expected_bytes": 621,
+      "expected_sha256": "1ec43be1f165411b6aba3e101d19731a28efb0c92386bd2ccf285defbbe68ea4",
+      "id": "distribution",
+      "sha256": "1ec43be1f165411b6aba3e101d19731a28efb0c92386bd2ccf285defbbe68ea4",
+      "status": "AUTHENTICATED",
+      "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/distribution-missing-attribution.txt"
+    },
+    {
+      "bytes": 1090,
+      "expected_bytes": 1090,
+      "expected_sha256": "17b7fd84b25865de28cfb2fa5921de1e88c73702240023948a901178e3c3c7f1",
+      "id": "dep-license",
+      "sha256": "17b7fd84b25865de28cfb2fa5921de1e88c73702240023948a901178e3c3c7f1",
+      "status": "AUTHENTICATED",
+      "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/80b4310c14f0b4a1e07f366889260c9eb48ae5d4/fixtures/MIT-LICENSE.txt"
+    }
+  ],
+  "state": "FINAL"
+}

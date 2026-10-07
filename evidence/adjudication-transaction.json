@@ -1,0 +1,199 @@
+{
+  "hash": "0x8ae2df79a3ed562dcdae7ea202d884c2e91378ce46defb1e65011d227a116fbb",
+  "from_address": "0xd215472bEC1a71f4cFe2f6e0F6e3A3C85d58aAd7",
+  "to_address": "0x866Be66A0Ff5998c3bc858f3766c2802e2c447a5",
+  "value": 0,
+  "type": 2,
+  "status": "FINALIZED",
+  "result_name": "MAJORITY_AGREE",
+  "created_at": "2026-10-07T14:19:50.754359+00:00",
+  "leader_only": false,
+  "execution_mode": "NORMAL",
+  "num_of_initial_validators": 5,
+  "rotation_count": 0,
+  "last_round": {
+    "round": "0",
+    "leader_index": "0",
+    "votes_committed": "5",
+    "votes_revealed": "5",
+    "appeal_bond": "0",
+    "rotations_left": "3",
+    "result": 6,
+    "round_validators": [
+      "0x3D83ab507785b95ca5C208bEc80CCe3D5ca98100",
+      "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8",
+      "0x4aba638Cf0Cf5249437AaD968fC69dde46ae6BAC",
+      "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84",
+      "0x36728d2a123aB444E603EE5b2ad17d18Bb193557"
+    ],
+    "validator_votes_hash": [
+      "0x506ed386de436207c4c77a178476f4a75af488176f7b7f42ad4302c41849245a",
+      "0xf06cd46044fae89aa50c800bfc81a81d2667f3cb1b4ac441c863849f4efc737b",
+      "0x4047fdf38474a360edcc31fb0430753ba1dcd459871842a575b9265bfe1796c3",
+      "0xd4d573675c7e24975584775d430ee5334a227c0dfcb7b29dc457156dfc844529",
+      "0xc03c94144f14f7d3d0a5dcf5672b79a03bfffb1080ec0a55a9573de1bdd54fef"
+    ],
+    "validator_votes": [
+      1,
+      5,
+      2,
+      1,
+      1
+    ],
+    "validator_votes_name": [
+      "AGREE",
+      "IDLE",
+      "DISAGREE",
+      "AGREE",
+      "AGREE"
+    ]
+  },
+  "rounds": [
+    {
+      "status_changes": [
+        "PENDING",
+        "PROPOSING",
+        "COMMITTING",
+        "REVEALING",
+        "ACCEPTED"
+      ],
+      "consensus_round": "Accepted",
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "vote": null,
+          "equivalence_outputs": {
+            "0": [
+              {
+                "bytes": 1090,
+                "expected_bytes": 1090,
+                "expected_sha256": "17b7fd84b25865de28cfb2fa5921de1e88c73702240023948a901178e3c3c7f1",
+                "id": "project-license",
+                "sha256": "17b7fd84b25865de28cfb2fa5921de1e88c73702240023948a901178e3c3c7f1",
+                "status": "AUTHENTICATED",
+                "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/PROJECT-LICENSE.txt"
+              },
+              {
+                "bytes": 453,
+                "expected_bytes": 453,
+                "expected_sha256": "854808a99f2e47054cea395217fc509adba0b04e6396bb5e093fff1fbe8d28b7",
+                "id": "manifest",
+                "sha256": "854808a99f2e47054cea395217fc509adba0b04e6396bb5e093fff1fbe8d28b7",
+                "status": "AUTHENTICATED",
+                "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/release-manifest.json"
+              },
+              {
+                "bytes": 621,
+                "expected_bytes": 621,
+                "expected_sha256": "1ec43be1f165411b6aba3e101d19731a28efb0c92386bd2ccf285defbbe68ea4",
+                "id": "distribution",
+                "sha256": "1ec43be1f165411b6aba3e101d19731a28efb0c92386bd2ccf285defbbe68ea4",
+                "status": "AUTHENTICATED",
+                "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/distribution-missing-attribution.txt"
+              },
+              {
+                "bytes": 1090,
+                "expected_bytes": 1090,
+                "expected_sha256": "17b7fd84b25865de28cfb2fa5921de1e88c73702240023948a901178e3c3c7f1",
+                "id": "dep-license",
+                "sha256": "17b7fd84b25865de28cfb2fa5921de1e88c73702240023948a901178e3c3c7f1",
+                "status": "AUTHENTICATED",
+                "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/80b4310c14f0b4a1e07f366889260c9eb48ae5d4/fixtures/MIT-LICENSE.txt"
+              }
+            ],
+            "1": {
+              "manifest": [
+                {
+                  "bytes": 1090,
+                  "expected_bytes": 1090,
+                  "expected_sha256": "17b7fd84b25865de28cfb2fa5921de1e88c73702240023948a901178e3c3c7f1",
+                  "id": "project-license",
+                  "sha256": "17b7fd84b25865de28cfb2fa5921de1e88c73702240023948a901178e3c3c7f1",
+                  "status": "AUTHENTICATED",
+                  "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/PROJECT-LICENSE.txt"
+                },
+                {
+                  "bytes": 453,
+                  "expected_bytes": 453,
+                  "expected_sha256": "854808a99f2e47054cea395217fc509adba0b04e6396bb5e093fff1fbe8d28b7",
+                  "id": "manifest",
+                  "sha256": "854808a99f2e47054cea395217fc509adba0b04e6396bb5e093fff1fbe8d28b7",
+                  "status": "AUTHENTICATED",
+                  "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/release-manifest.json"
+                },
+                {
+                  "bytes": 621,
+                  "expected_bytes": 621,
+                  "expected_sha256": "1ec43be1f165411b6aba3e101d19731a28efb0c92386bd2ccf285defbbe68ea4",
+                  "id": "distribution",
+                  "sha256": "1ec43be1f165411b6aba3e101d19731a28efb0c92386bd2ccf285defbbe68ea4",
+                  "status": "AUTHENTICATED",
+                  "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/bf9516033695cf2c5002bb0d32b6692754313bf2/fixtures/distribution-missing-attribution.txt"
+                },
+                {
+                  "bytes": 1090,
+                  "expected_bytes": 1090,
+                  "expected_sha256": "17b7fd84b25865de28cfb2fa5921de1e88c73702240023948a901178e3c3c7f1",
+                  "id": "dep-license",
+                  "sha256": "17b7fd84b25865de28cfb2fa5921de1e88c73702240023948a901178e3c3c7f1",
+                  "status": "AUTHENTICATED",
+                  "url": "https://raw.githubusercontent.com/haris4587/LicenseGate/80b4310c14f0b4a1e07f366889260c9eb48ae5d4/fixtures/MIT-LICENSE.txt"
+                }
+              ],
+              "result": {
+                "dependencies": [
+                  {
+                    "citations": [
+                      "dep-license",
+                      "distribution",
+                      "manifest"
+                    ],
+                    "id": "demo-lib",
+                    "incompatibilities": [],
+                    "missing_actions": [
+                      "Add the full MIT license text for demo-lib, including copyright and permission notice, to the binary artifact documentation/package.",
+                      "Include an attribution/LICENSE/NOTICE file in the shipped artifact so the bundled dependency notices are actually distributed."
+                    ],
+                    "obligations": [
+                      "For BINARY distribution bundling demo-lib, include the complete MIT copyright notice and permission notice in the distributed artifact.",
+                      "Assess compliance based on the shipped artifact inventory itself; separate review evidence does not satisfy shipped-notice requirements."
+                    ],
+                    "outcome": "ACTION_REQUIRED"
+                  }
+                ],
+                "outcome": "ACTION_REQUIRED",
+                "reasoning": "Release binding is established by the authenticated manifest provenance and matches the distributed artifact identity: DemoBinary 1.0.0, artifact demobinary-1.0.0-fixture, BINARY distribution, project license MIT, and dependency demo-lib 1.0.0 at the specified repository and commit. The locked policy permits MIT dependencies in binary distribution only if the shipped artifact includes the complete dependency copyright and permission notices. The dependency license evidence shows MIT, which requires inclusion of the copyright and permission notice in copies or substantial portions. Distribution evidence affirmatively states the binary bundles demo-lib and that the artifact contains no LICENSE, copyright notice, attribution file, or permission notice; it also says separate review evidence is not bundled. Therefore obligations for the MIT dependency were not met in the actual distributed artifact. The policy characterizes missing notices as remediable, so this is ACTION_REQUIRED rather than BLOCKED."
+              }
+            }
+          }
+        },
+        {
+          "execution_result": "SUCCESS",
+          "vote": "agree"
+        }
+      ],
+      "validators": [
+        {
+          "address": "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8",
+          "vote": "idle",
+          "execution_result": "ERROR"
+        },
+        {
+          "address": "0x4aba638Cf0Cf5249437AaD968fC69dde46ae6BAC",
+          "vote": "disagree",
+          "execution_result": "SUCCESS"
+        },
+        {
+          "address": "0x772ffCd1dF6Cc566eC4b8d3f4F4f8eBbb6B36C84",
+          "vote": "agree",
+          "execution_result": "SUCCESS"
+        },
+        {
+          "address": "0x36728d2a123aB444E603EE5b2ad17d18Bb193557",
+          "vote": "agree",
+          "execution_result": "SUCCESS"
+        }
+      ]
+    }
+  ]
+}
