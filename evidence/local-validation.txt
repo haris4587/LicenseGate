@@ -1,0 +1,8 @@
+Validation uses genvm-linter 0.11.0 and actual SDK runner pinned in contracts/licensegate.py.
+Run commands:
+python -m pytest -q --junitxml=evidence/local-tests.xml
+genvm-lint check contracts/licensegate.py
+genvm-lint schema contracts/licensegate.py --output evidence/contract-schema.json
+
+GenVM SDK validation passed; canonical LicenseGate ABI has 2 view and 3 nonpayable write methods.
+Local results are recorded by the XML report; Full Consensus live evidence is separate.

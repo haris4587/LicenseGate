@@ -1,0 +1,18 @@
+{
+  "project": "DemoBinary",
+  "release": "1.0.0",
+  "repository": "haris4587/LicenseGate",
+  "artifact": "demobinary-1.0.0-fixture",
+  "declared_license": "MIT",
+  "distribution": "BINARY",
+  "dependencies": [
+    {
+      "id": "demo-lib",
+      "name": "demo-lib",
+      "version": "1.0.0",
+      "repository": "haris4587/LicenseGate",
+      "commit": "80b4310c14f0b4a1e07f366889260c9eb48ae5d4",
+      "license_evidence_id": "dep-license"
+    }
+  ]
+}
